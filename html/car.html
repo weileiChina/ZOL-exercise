@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/car.css" />
+		<style type="text/css">
+			.w {
+				width: 960px;
+			}
+		</style>
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script src="../js/cookie.js"></script>
+		<script type="text/javascript" src="../js/car.js" ></script>
+		
+		<script type="text/javascript">
+			
+		</script>
+	</head>
+
+	<body>
+		<div id="comment"></div>
+		<div id="head" class="w">
+			<div class="logo_car l">
+				<a href="../index.html">
+					<img src="../img/shop_212x40.jpg" />
+					<img src="../img/logo-text.png" />
+				</a>
+			</div>
+			<div class="step r">
+				<ul class="s1">
+					<li class="s2">下订单</li>
+					<li class="s3">去付款</li>
+					<li class="s4">确认收货</li>
+					<li class="s5">评价</li>
+				</ul>
+			</div>
+		</div>
+		<div id="content" class="w">
+			<div class="car_num">
+				<p>购物车状态<em>（2/30）</em></p>
+				<div class="total">
+					<input class="submitCart" type="button" value="去结算">
+					<!--<span>总计（不含运费）：<em>¥</em><em class="total-cart-price">14492</em></span>-->
+				</div>
+			</div>
+			<div class="car_good">
+				<table width="100%">
+					<tr>
+						<th class="th-1"><label><input type="checkbox" value="1" checked="">全选</label></th>
+						<th class="th-2">所选商品</th>
+						<th class="th-3">单价（元）</th>
+						<th class="th-4">数量</th>
+						<th class="th-5">优惠</th>
+						<th class="th-6">小计（元）</th>
+						<th class="th-7">操作</th>
+					</tr>
+					<!--<tr class ="stname">
+						<td colspan="7" class=" store_infor ">
+							<div class="shopname"><input name="" type="checkbox" value="189882" checked="">店铺：
+								<a href="#" target="_blank" class="shopnm">华开电脑专营店</a>
+							</div>
+							<div class="contact">
+								<a class="tag_security" style="margin: 0 -9px 0 0">&nbsp;</a>
+							</div>
+							<div class="contact">
+								<a target="_blank" href="#">
+									<img border="0" src="../img/button_121.gif" alt="点击这里给我发消息" title="点击这里给我发消息"></a>
+							</div>
+						</td>
+					</tr>-->
+					<!--<tr class = "manjian">
+						<td class="offer_detail" colspan="7">
+							<div class="total">
+								<span class="type l" style="float: left;">满就减</span>商品金额已满
+								<em>4666.00</em>元，立减<em>36.00</em>元
+							</div>
+						</td>
+					</tr>-->
+					<!--<tr class ="goods_order">
+						<td colspan="2" class="s-infor">
+							<input type="checkbox">
+							<a href="#" class="pic" target="_blank">
+								<img width="80" height="60" src="../img/list/1.jpg"></a>
+							<div class="inforbox">
+								<h3 class="tit">
+									<a href="#">【顺丰包邮】Acer E5-572G-57VZ 高性能游戏本  15.6英吋 标准电压i5-4210m 4GB 500GB 性能独显GT940M 2GB FHD高分屏</a>
+								</h3>
+								<div class="security clearfix">
+									<a href="#" title="7天退换货" class="security-a" target="_blank"></a>
+									<a href="#" title="上门服务" class="security-c" target="_blank"></a>
+									<a href="#" title="真实报价" class="security-d" target="_blank"></a>
+									<a href="#" title="先行赔付" class="" target="_blank"></a>
+								</div>
+								<p>颜色：黑色</p>
+								<div class="info-con">
+									<span>套装：官方标配</span>
+									<div class="info-help">
+										<h5>官方标配：</h5>
+										<p>全新原装电脑+全国联保保修卡+说明书+电源适配器+电池（具体以厂家配置为准）</p>
+									</div>
+								</div>
+							</div>
+						</td>
+						<td class="s-price ">                                    
+                       		<em>3760</em>
+						</td>
+						<td class="s-amount ">
+							<div class="buy-num">
+								<a class="minus" href="javascript:void(0)" title="减一">-</a>
+								<input type="text" class="text_amount" value="1">
+								<a class="plus" href="javascript:void(0)" title="加一">+</a>
+								<div class="tips-2" id="tips_2552051" style="display: none;">最多只能购买8件</div>
+							</div>
+						</td>
+						<td class="s-agio">
+                                    <div>−−</div>
+						</td>
+						<td class="s-total">
+                       		<em id="cartPrice">18800</em>
+						</td>
+						<td class="s-del">
+							<div class="s-delbox"> 
+								<a href="javascript:void(0)" title="移入收藏夹" ">移入收藏夹</a>
+								<a href="javascript:void(0)" >删除</a>
+		                        <div class="deletebox" style="display:none;">
+									<p>确认要删除该商品吗？</p>
+									<a href="javascript:void(0)">取消</a> <i></i>
+								</div>                                                
+							</div>
+						</td>
+					</tr>-->
+				</table>
+			</div>
+			<div class="total_price">商品总价<span>（不含运费）</span>：<em>¥</em><em class="cartPrice"></em></div>
+			
+			<div class="order-foot clearfix">
+				<label><input name="checkAllCart" type="checkbox" value="1" checked="">全选</label>
+				<!--<a href="javascript:void(0)" >批量删除</a>-->
+				<a href="../index.html" class="go-shopping">&lt;&lt;继续购物</a>
+				<input type="button" value="去结算" name="submitCart" class="accounting-btn">			
+			</div>
+			
+			<div class="good_advice">
+				<ul class="modgoods_tab">
+					<li>猜你喜欢</li>
+				</ul>
+				<ul class="modgoods-list">
+					<li>
+						<a class="pic" href="#" title="" target="_blank">
+							<img width="160" height="120"src="../img/list/11.png" alt="">
+							<span>【顺丰包邮·官方授权】无小Y不游戏！彪悍的小Y伴你征服游戏战场！联想 Y430pAT-ISE（I7-4710M 8G 1T 专业游戏显卡GTX850M）</span></a>
+							<div class="price">¥5388.00</div>
+					</li>
+					<li>
+						<a class="pic" href="#" title="" target="_blank">
+							<img width="160" height="120"src="../img/list/10.jpg" alt="">
+							<span>【顺丰包邮】15.6英寸轻薄游戏本 华硕 ZenBook Pro UX501JW4720 纵情畅玩 酷睿i7-4720H 8G 1TB  GTX950M 2G独显 背光键盘 1920*1080"</span></a>
+							<div class="price">¥7188.00</div>
+					</li>
+					<li>
+						<a class="pic" href="#" title="" target="_blank">
+							<img width="160" height="120"src="../img/list/12.png" alt="">
+							<span>【顺丰包邮】华硕 ZX50VW6300 15.6英寸游戏笔记本 神盾英雄 全芯升"</span></a>
+							<div class="price">¥4768.00</div>
+					</li>
+					<li>
+						<a class="pic" href="#" title="" target="_blank">
+							<img width="160" height="120"src="../img/list/13.jpg" alt="">
+							<span>【限时促销 下单送六件套】神舟 战神Z7-SL7D3 15.6英寸游戏笔记本( 六代i7/8G /128GB+1T/GTX970M)【顺丰包邮！神舟官方授权</span></a>
+							<div class="price">¥7138.00</div>
+					</li>
+					<li>
+						<a class="pic" href="#" title="" target="_blank">
+							<img width="160" height="120"src="../img/list/15.png" alt="">
+							<span>【顺丰包邮】惠普 240 G3（K7W24PT）14英吋 商务办公本 办公娱乐两不误 I3-4005U 4G 500G 7200转 2G独显 win7黑色 带蓝牙</span></a>
+							<div class="price">¥2949.00</div>
+					</li>
+				</ul>
+				
+			</div>
+			
+		</div>
+		<div id="foot" class="w">
+			<p class="links">
+				<a target="_blank" href="#">关于商城</a>|
+				<a target="_blank" href="#">营销中心</a>|
+				<a target="_blank" href="#">服务中心</a>|
+				<a target="_blank" href="#">联系我们</a>|
+				<a target="_blank" href="#">发展历程</a>|
+				<a target="_blank" href="#">媒体报道</a>
+			</p>
+			<p>
+				<span class="copyright">©
+				<script type="text/javascript">
+          			var yearStr;
+                    now = new Date();
+                    yearStr = now.getFullYear();
+                    document.write(yearStr);
+                </script>
+                2016中关村在线 版权所有. 京ICP备09041801号-182 
+                <a target="_blank" href="#">京ICP证010391号</a>
+                </span>
+            </p>
+            
+            <div class="authentication">
+            	<a target="_blank" href="#">
+            		<img width="108" height="40" alt="经营性网站备案信息" src="../img/beian.png" />
+            	</a>
+            	<a target="_blank" href="#">
+            		<img width="108" height="40" alt="海淀网络警察提醒您" src="../img/jingcha.png" />
+            	</a>
+            	<a target="_blank" href="#" id="___szfw_logo___">
+            		<img width="108" height="40" src="../img/cert.png" />
+            	</a>
+			</div>
+			
+
+		</div>
+	</body>
+
+</html>

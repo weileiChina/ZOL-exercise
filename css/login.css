@@ -1,0 +1,107 @@
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr{margin:0;padding:0;}
+body{font:12px/1.5 "微软雅黑"; color:#333;}
+select,input,button{vertical-align:middle;font-size:100%;}
+ul,ol{list-style:none;}
+fieldset,img{border:0;}
+em{font-style:normal;}
+a{text-decoration: none;}
+
+/*==============bar=============*/
+#bar{width: 990px;height:94px;margin:15px auto 0;}
+#bar a{width: 355px;height: 60px;}
+#bar a img{float: left;margin-right: 8px;}
+#bar a span{float:left;font-size: 14px;color:#666666;height:45px;line-height: 45px;border-left: 1px solid #e6e6e6;padding-left: 10px;margin-top:10px;}
+#bar p{float:right;height:30px;line-height:30px;color: #333;font-size: 15px;margin: 15px 5px 0;}
+#bar p a{color: #c00;width: 70px;float: right;height: 22px;line-height:22px;text-align:center;margin-top:3px;font-size: 13px;}
+#bar p a:hover{color: #fafafa;background:#C00;}
+
+/*========form=========*/
+#form{width: 990px;height:352px;margin:15px auto 0;border:1px solid #ccc;;}
+#form .ad{background:url(../img/ad2.jpg);width: 520px;height: 350px;float: left;}
+
+
+#form .login{width:290px;height: 303px ;float: right;padding: 0 85px 0 0;}
+#form .login .head{width: 290px;height: 28px;padding:20px 0 0}
+#form .login .head h3{height: 28px; overflow: hidden;font: 18px/28px "Microsoft YaHei";color: #666;float: left;}
+#form .login .head .btn_login{float: right;background:url(../img/shop_login_bg.png)no-repeat -276px -117px;color:#333;padding: 0 0 0 17px;margin-top: 5px;font: 12px/1.5 Arial;}
+#form .login .head .btn_login:hover{text-decoration: underline;color: #c00;}
+#form .login .content{position: relative;;}
+#form .login .content p{width: 265px;height: 22px;font: 12px/22px "Arial";color: #f33;border: 1px solid #f99;background:#fff2f2 url(../img/bg.png)no-repeat -270px -89px;padding-left: 25px;display:none;position: absolute;top: 1px;left: 0;}
+#form .login .content input{width:290px;height:40px;font:14px/22px "Arial";border:1px solid #ccc;margin-bottom: 10px;outline: 0 auto;}
+.login_phone input{outline: 0 auto;}
+#form .login .content input.name{margin-top: 30px;}
+#form .login .content .findpwd{float:right;color: #134ba0;text-decoration:none;padding-bottom: 17px;}
+#form .login .content .findpwd:hover{float:right;color: #c00;text-decoration:underline;}
+#form .login .content input.login_btn{margin: 0 0 10px;width: 290px;height: 40px;font:bold 14px/40px "Arial";color: #fff;text-align: center; border: 0;background: url(../img/shop_login_bg.png)no-repeat 0 0;cursor:pointer}
+#form .login .content input.login_btn:hover{background-position: 0 -41px;}
+#form .login .footer{width: 290px;height: 38px;/*overflow: hidden;*/}
+#form .login .footer span.hezuo{float:left;font: 12px/38px "Arial";color: #666;padding: 0 2px 0 0;width: 86px;height: 38px;}
+#form .login .footer a{float:left;width: 38px;height: 38px;overflow: hidden;background: url(../img/shop_login_bg.png)no-repeat;}
+#form .login .footer .sina{margin:0 12px 0 0;background-position:0 -82px;}
+#form .login .footer .sina:hover{margin:0 12px 0 0;background-position:0 -120px;}
+#form .login .footer .qq{margin:0 12px 0 0;background-position:-39px -82px;}
+#form .login .footer .qq:hover{margin:0 12px 0 0;background-position:-39px -120px;}
+#form .login .footer .alipay{margin:0 12px 0 0;background-position:-78px -82px;}
+#form .login .footer .alipay:hover{margin:0 12px 0 0;background-position:-78px -120px;}
+#form .login .footer .baidu{margin:0 12px 0 0;background-position:-117px -82px;}
+#form .login .footer .baidu:hover{margin:0 12px 0 0;background-position:-117px -120px;}
+
+/*=========login_phone========*/
+#form .login_phone{display: none;width:290px;height: 303px ;float: right;padding: 0 85px 0 0;}
+#form .login_phone .head{width: 290px;height: 28px;padding:20px 0 0}
+#form .login_phone .head h3{height: 28px; overflow: hidden;font: 18px/28px "Microsoft YaHei";color: #666;float: left;}
+#form .login_phone .head .btn_login{float: right;background:url(../img/shop_login_bg.png)no-repeat -276px -142px;color:#333;padding: 0 0 0 17px;margin-top: 5px;font: 12px/1.5 Arial;}
+#form .login_phone .head .btn_login:hover{text-decoration: underline;color: #c00;}
+#form .login_phone .content{position: relative;}
+#form .login_phone .content p{width: 265px;height: 22px;font: 12px/22px "Arial";color: #f33;border: 1px solid #f99;background:#fff2f2 url(../img/bg.png)no-repeat -270px -89px;padding-left: 25px;display:none;position: absolute;top: 1px;left: 0;}
+#form .login_phone .content input{width:290px;height:32px;font:14px/22px "Arial";border:1px solid #ccc;margin-bottom: 10px;}
+#form .login_phone .content input.name{margin-top: 30px;}
+/*#form .login_phone .content .right_tip{float: left;background: url(../img/login-bg.png)no-repeat -280px -190px;position: absolute;left: 290px;top:20px;}*/
+#form .login_phone .content input.tu_yzm{width: 180px;height: 40px;float: left;}
+#form .login_phone .content .yzm_tu{width: 100px;height: 40px;border: 1px solid #000;float: left;background: #f8f8f8;margin-left:6px;text-align: center;font-size: 15px;line-height: 40px ;}
+#form .login_phone .content input.duanxin_yzm{width: 180px;height: 40px;float: left;}
+#form .login_phone .content input.getyzm{width: 106px;height: 42px;font:12px/38px arial;background: #f8f8f8;border: 0 none;border: 1px solid #ccc;border-left:0;cursor: pointer;float: left;}
+#form .login_phone .content .findpwd{float:right;color: #134ba0;text-decoration:none;padding-bottom: 17px;}
+#form .login_phone .content .findpwd:hover{float:right;color: #c00;text-decoration:underline;}
+#form .login_phone .content input.login_btn{margin: 0 0 10px;width: 290px;height: 40px;font:bold 14px/40px "Arial";color: #fff;text-align: center; border: 0;background: url(../img/shop_login_bg.png)no-repeat 0 0;cursor:pointer}
+#form .login_phone .content input.login_btn:hover{background-position: 0 -41px;}
+#form .login_phone .footer{width: 290px;height: 38px;/*overflow: hidden;*/}
+#form .login_phone .footer span.hezuo{float:left;font: 12px/38px "Arial";color: #666;padding: 0 2px 0 0;width: 86px;height: 38px;}
+#form .login_phone .footer a{float:left;width: 38px;height: 38px;overflow: hidden;background: url(../img/shop_login_bg.png)no-repeat;}
+#form .login_phone .footer .sina{margin:0 12px 0 0;background-position:0 -82px;}
+#form .login_phone .footer .sina:hover{margin:0 12px 0 0;background-position:0 -120px;}
+#form .login_phone .footer .qq{margin:0 12px 0 0;background-position:-39px -82px;}
+#form .login_phone .footer .qq:hover{margin:0 12px 0 0;background-position:-39px -120px;}
+#form .login_phone .footer .alipay{margin:0 12px 0 0;background-position:-78px -82px;}
+#form .login_phone .footer .alipay:hover{margin:0 12px 0 0;background-position:-78px -120px;}
+#form .login_phone .footer .baidu{margin:0 12px 0 0;background-position:-117px -82px;}
+#form .login_phone .footer .baidu:hover{margin:0 12px 0 0;background-position:-117px -120px;}
+
+/*========footer===========*/
+#footer{border-top:1px solid #dcdcdc ;margin: 50px 0 0;padding: 12px 0 25px;height: 31px;}
+#footer .innerfooter{margin: 0 auto;width: 982px;}
+#footer .innerfooter .about{float: left;}
+#footer .innerfooter .copyright{float: right;}
+#footer .innerfooter a{color: #333;}
+#footer .innerfooter .about a{margin: 0 10px;color: #333;}
+#footer .innerfooter .about a:hover{margin: 0 10px;color:#c00;text-decoration: underline;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

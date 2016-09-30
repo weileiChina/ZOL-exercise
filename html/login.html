@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/login.css" />
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script src="../js/yanzhengma.js"></script>
+		<script src="../js/login.js"></script>
+		<script src="../js/cookie.js"></script>
+		
+	</head>
+	<body>
+		<div id="bar">
+			<a href="../index.html">
+				<img src="../img/shop_182x60.png"/>
+				<span>中关村在线旗下网上商城</span>
+			</a>
+			<p><a href="register.html">立即注册</a>还没有ZOL商城账号？</p>
+		</div>
+		
+		<div id="form">
+			<div class="ad"></div>
+			<!--/手机号/邮箱/用户名/-->
+			<div class="login">
+				<div class="head">
+					<h3>登录ZOL商城</h3>
+					<a  class="btn_login" href="javascript:;">手机动态码登录</a>
+				</div>
+				<div class="content">
+					<p class="tip">登录失败，用户名或密码错误</p>
+					<input class="name" type="text" placeholder="手机号/邮箱/用户名" maxlength="11"/>
+					<input class="pass" type="password" placeholder="密码" />
+					<a class="findpwd" href="#">忘记密码？</a>
+					<input type="button" class="login_btn" value="登录" />
+				</div>
+				<div class="footer">
+					<span class="hezuo">合作账号登录</span>
+					<a href="#" class="sina"></a>
+					<a href="#" class="qq"></a>
+					<a href="#" class="alipay"></a>
+					<a href="#" class="baidu"></a>
+				</div>				
+			</div>
+			<!--手机短信验证登录-->
+			<div class="login_phone">
+				<div class="head">
+					<h3>登录ZOL商城</h3>
+					<a  class="btn_login" href="javascript:;">普通方式登录</a>
+				</div>
+				<div class="content">
+					<p class="tip">请填写手机号</p>
+					<input class="name" type="text" placeholder="手机号" maxlength="11" />
+					<i class="right_tip"></i>
+					<input class="tu_yzm" type="text" placeholder="图片验证码" />
+					<div class="yzm_tu"></div>
+					
+					<input class="duanxin_yzm" type="text" placeholder="短信验证码" />
+					<input class="getyzm" type="button" value="发送验证码"></input>
+					<input type="button" class="login_btn" value="登录" />
+				</div>
+				<div class="footer">
+					<span class="hezuo">合作账号登录</span>
+					<a href="#" class="sina"></a>
+					<a href="#" class="qq"></a>
+					<a href="#" class="alipay"></a>
+					<a href="#" class="baidu"></a>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div id="footer">
+			<div class="innerfooter">
+				<div class="about">
+					<a href="#">关于ZOL商城</a>|
+					<a href="#">联系我们</a>|
+					<a href="#">帮助中心</a>|
+				</div>
+				<div class="copyright">
+					<a href="#">©2016.中关村在线 版权所有</a>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,50 @@
+/*.holder {
+	margin: 15px 0;
+}
+
+.holder a {
+	font-size: 12px;
+	cursor: pointer;
+	margin: 0 5px;
+	color: #333;
+}
+
+.holder a:hover {
+	background-color: #222;
+	color: #fff;
+}
+
+.holder a.jp-previous { margin-right: 15px; }
+.holder a.jp-next { margin-left: 15px; }
+
+.holder a.jp-current, a.jp-current:hover { 
+	color: #FF4242;
+	font-weight: bold;
+}
+
+.holder a.jp-disabled, a.jp-disabled:hover {
+	color: #bbb;
+}
+
+.holder a.jp-current, a.jp-current:hover,
+.holder a.jp-disabled, a.jp-disabled:hover {
+	cursor: default; 
+	background: none;
+}
+
+.holder span { margin: 0 5px; }*/
+
+
+.mini-page{ float:right; margin:9px 10px 0 0; height:21px; line-height:21px;}
+.mini-page a{ cursor: pointer;}
+.mini-page em{ float:left; padding:0 2px 0 0; color:#999;}
+.mini-page .prev,.mini-page .next,.mini-page .no-prev,.mini-page .no-next{ float:left; margin:0 0 0 6px; width:19px; height:19px; text-indent:-9999em; overflow:hidden; border:1px solid #dbdbdb; background-color:#fff;}
+.mini-page .prev,.mini-page .no-prev{ background:url(../img/zolcom_list_ico.png)no-repeat 0 -50px;}
+.mini-page .next,.mini-page .no-next{ background:url(../img/zolcom_list_ico.png)no-repeat 0 -70px;}
+.mini-page .prev:hover,.mini-page .next:hover{ border:1px solid #f33;}
+.mini-page .no-prev,.mini-page .no-next{ background-color:#f7f7f7;}
+
+
+
+.page a{cursor: pointer;}
+a.jp-current, a.jp-current:hover { color: #fff;background: #c00;/*font-weight: bold;*/cursor: pointer;}

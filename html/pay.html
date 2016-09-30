@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/pay.css" />
+		<style type="text/css">
+			.w {width: 960px}
+			#top .right {width: 580px;height: 29px;}
+		</style>
+		<script src="../js/cookie.js"></script>
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script src="../js/pay.js"></script>
+	</head>
+
+	<body>
+		<div id="comment"></div>
+		<div id="header" class="w">
+			<div class="logo l">
+				<a href="../index.html"><img src="../img/shop_212x40.jpg" /></a>
+			</div>
+			<span class="title">收银台</span>
+		</div>
+		<div id="content" class="w">
+			<div class="order_box">
+				<div class="order-status">
+					<h3 class="prompt">订单已提交，请在<span>24小时</span>内完成付款（逾期自动取消）</h3>
+					<div class="details">
+						<p> <span>您的订单号：2016083009155439467553</span> <span class="label">商品名称：【顺丰包邮】15.6英寸轻薄游戏本 华硕 ZenB等</span></p>
+						<p><span>收货人：wl</span><span>18366882191</span> <span class="label">收货地址：沙河镇沙阳路18号北京科技职业学院 </span></p>
+					</div>
+				</div>
+				<div class="amount-code">
+					<div class="code">
+						<div class="saoma"><img src="../img/shop_wechat.png" width="75" height="75" /></div>
+						<div class="code-innder">
+							<span class="code-name">支付宝扫码支付</span>
+						</div>
+					</div>
+					<div class="price">应付金额<span>14376.00 </span>元</div>
+				</div>
+			</div>
+			<div class="pay_way">
+				<dl class="third-party" id="thirdpaySpanDiv">
+					<dt id="third_dt"><span id="third_span" class="radiobox"></span>第三方支付平台：</dt>
+					<dd class="clearfix">
+						<div id="ali_way_selected" class="way-selected">
+							<a href="javascript:void(0);" class="classa selected" id="alipay_span">
+								<img src="../img/alipay.png" width="138" height="38">
+							</a>
+
+							<a href="javascript:void(0);" class="classa" id="wxpay_span">
+								<img src="../img/weixin.png" width="138" height="38">
+							</a>
+
+							<span id="pay_amount_span" class="pay-amount" style="">支付<em>14376.00</em>元</span></div>
+					</dd>
+				</dl>
+			</div>
+
+			<div class="yinhang">
+				<p><span class="radiobox" id="yhk"></span>银行卡支付：</dt>
+			</div>
+			<div class="operation">
+				<span id="not_pay_submit" class="pay-submit-btn" style="display: none;">立即支付</span>
+				<a href="####" target="_blank" id="can_pay_submit" style="display: block;" class="pay-submit-btn">立即支付</a>
+				<span id="can_pay_tips" class="tips" style="color:#F60">
+					提示： 若订单金额大于您的网络支付单笔交易限额，您可以拍下多个订单，并致电客服给您拆单再进行分单付款，客服电话400-678-0068；
+				</span>
+			</div>
+			<div class="pay-problem">
+				<h4>常见支付问题</h4>
+				<ol>
+					<li>
+						<h5>1. 支付金额超过网银支付的单笔限额怎么办?</h5>
+						<p>若支付金额超过您的网银单笔交易限额，您可以下多个订单，并致电客服400-678-0068，由我们客服给您拆单再进行分单付款；或致电银行取消限额。</p>
+					</li>
+					<li>
+						<h5>2. 网上银行/支付宝/微信已扣款有消费记录，但订单上还显示"等待买家付款" ?</h5>
+						<p>出现此问题，可能是银行/支付宝/财付通的数据没有即时传输至我们收银台，请您第一时间与我们客服联系400-678-0068告知订单信息，我们将协助您解决。</p>
+					</li>
+					<li>
+						<h5>3. 支付宝余额有足额的金额，却无法用余额付款</h5>
+						<p>可能由于您支付宝账户没有实名认证，建议您去支付宝网页申请实名认证。</p>
+					</li>
+				</ol>
+				<p class="more">
+					<a href="https://cashier.zol.com/paygate/pay/help?pid=104&amp;orderSn=d59bfc6bdccc5c4235cff69c911cf6c9&amp;id=CNpBAWeW4s%2FJm%2FSTd069POIJy71%2BYlqNvDYnsgibUHE%3D" id="helpLink" target="_blank">查看更多支付帮助&gt;</a>&nbsp;&nbsp;
+					<a href="https://cashier.zol.com/paygate/pay/advice?pid=104&amp;orderSn=d59bfc6bdccc5c4235cff69c911cf6c9&amp;id=CNpBAWeW4s%2FJm%2FSTd069POIJy71%2BYlqNvDYnsgibUHE%3D" id="adviceLink" target="_blank">问题反馈&gt;</a>
+				</p>
+			</div>
+		</div>
+		
+		</div>
+		<div id="foot" class="w">
+			<p class="links">
+				<a target="_blank" href="#">关于商城</a>|
+				<a target="_blank" href="#">营销中心</a>|
+				<a target="_blank" href="#">服务中心</a>|
+				<a target="_blank" href="#">联系我们</a>|
+				<a target="_blank" href="#">发展历程</a>|
+				<a target="_blank" href="#">媒体报道</a>
+			</p>
+			<p>
+				<span class="copyright">©
+				<script type="text/javascript">
+          			var yearStr;
+                    now = new Date();
+                    yearStr = now.getFullYear();
+                    document.write(yearStr);
+                </script>2016
+                2016中关村在线 版权所有. 京ICP备09041801号-182 
+                <a target="_blank" href="#">京ICP证010391号</a>
+                </span>
+            </p>
+            
+            <div class="authentication">
+            	<a target="_blank" href="#">
+            		<img width="108" height="40" alt="经营性网站备案信息" src="../img/beian.png">
+            	</a>
+            	<a target="_blank" href="#">
+            		<img width="108" height="40" alt="海淀网络警察提醒您" src="../img/jingcha.png">
+            	</a>
+            	<a target="_blank" href="#" id="___szfw_logo___">
+            		<img width="108" height="40" src="../img/cert.png">
+            	</a>
+			</div>
+			
+
+		</div>
+	</body>
+
+</html>

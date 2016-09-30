@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/list.css" />
+		<link rel="stylesheet" type="text/css" href="../css/jPages.css"/>
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script src="../js/list.js"></script>
+		<script src="../js/cookie.js"></script>
+		<script src="../js/jPages.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#comment').load('othercomment.html', function() {
+					//订单移入移出
+					$('.dingdan').hover(function() {
+						$('.hide_dd').css('display', 'block');
+						$('.hide_dd').stop().animate({
+							'right': '37px'
+						});
+					}, function() {
+						$('.hide_dd').stop().animate({
+							'right': '-31px'
+						});
+						$('.hide_dd').css('display', 'none');
+					});
+					//足迹移入移出
+					$('.zuji').hover(function() {
+			
+						$('.hide_zj').css('display', 'block');
+						$('.hide_zj').animate({
+							'right': '37px'
+						});
+						//alert()
+					}, function() {
+						$('.hide_zj').animate({
+							'right': '-31px'
+						});
+						$('.hide_zj').css('display', 'none');
+					});
+					//购物车移入移出
+					$('.gwc').hover(function() {
+							$('.hide_gwc').css('display', 'block');
+							$('.hide_gwc').stop().animate({
+								'right': '37px'
+							});
+						}, function() {
+							$('.hide_gwc').stop().animate({
+								'right': '-31px'
+							});
+							$('.hide_gwc').css('display', 'none');
+						})
+						//返回顶部
+					$('.backtop').click(function() {
+							$('html,body').animate({
+								'scrollTop': 0
+							}, 0);
+						})
+						//移入商品分类出现二级菜单
+					$('.nav_left_title').hover(function() {
+							$('.nav_left_menu').fadeIn();
+						}, function() {
+							$('.nav_left_menu').fadeOut();
+						})
+						//=========================二级菜单=========================
+					$('.nav_left_menu ul li').hover(function() {
+						$(this).children().last().css('display', 'block'); //二级菜单出现
+						$(this).css({
+							'background': 'rgba(255,255,255,0.98)'
+						}); //相应的一级菜单背景色改变
+						$(this).find('.item').css('color', '#333');
+						$(this).find('.item').children('a').css('color', '#333') //相应的字体颜色改变
+			
+					}, function() {
+						$(this).children().last().css('display', 'none'); //二级菜单消失
+						$(this).css({
+							'background': '#2d2d2d'
+						}); //相应的一级菜单背景色改变
+						$(this).find('.item').css('color', '#fff');
+						$(this).find('.item').children('a').css('color', '#fff') //相应的字体颜色改变
+					})
+					
+					//左上角登录注册根据用户是否登录来改变
+					var a = getCookie('a');
+					var nm = getCookie('userName');
+					if(a == 'true'){
+//						$('.login').html("您好，"+nm);
+						$('.login').html("<a>您好</a>," + nm);
+						$('.login').css('color','#36c');
+						$('.login a').css('color','#666');
+						$('.register a').html("退出");
+						$('.register a').attr("href", "login.html");
+					}else{
+						$('.login').html(" Hi~欢迎来到ZOL商城，请"+"<a href='login.html'>登录</a>");
+						$('.register a').html("免费注册");
+					}
+					
+					$('.register a').click(function(){
+						setCookie('a',false);
+					});
+					
+					
+			
+				});
+				$('#foots').load("footcomment.html");
+				
+				
+			})
+		</script>
+	</head>
+
+	<body>
+		<div id="comment"></div>
+		<div id="banner" class="w">
+			<div class="bar">
+				<div class="total">共<em>18415</em>件</div>
+				<ul class="bar_nav">
+					<li>
+						<a href="../index.html" class="home">首页</a>
+					</li>
+					<li class="arrow">&gt;</li>
+					<li>笔记本</li>
+				</ul>
+				<div class="selector">
+					<div class="selectebox">
+						<div class="prop-item">
+							<dl>
+								<dt>类别：</dt>
+								<dd style="height:auto;">
+									<ul class="clearfix">
+										<li>
+											<a href="#" title="笔记本电脑">笔记本电脑</a>
+										</li>
+										<li>
+											<a href="#" title="鼠标">鼠标</a>
+										</li>
+										<li>
+											<a href="#" title="平板电脑">平板电脑</a>
+										</li>
+										<li>
+											<a href="#" title="台式电脑">台式电脑</a>
+										</li>
+										<li>
+											<a href="#" title="一体电脑">一体电脑</a>
+										</li>
+										<li>
+											<a href="#" title="笔记本电池">笔记本电池</a>
+										</li>
+										<li>
+											<a href="#" title="固态硬盘">固态硬盘</a>
+										</li>
+										<li>
+											<a href="#" title="笔记本包">笔记本包</a>
+										</li>
+										<li>
+											<a href="#" title="笔记本扩展坞/底座">笔记本扩展坞/底座</a>
+										</li>
+										<li>
+											<a href="#" title="键鼠套装">键鼠套装</a>
+										</li>
+										<li>
+											<a href="#" title="键盘">键盘</a>
+										</li>
+										<li>
+											<a href="#" title="网卡">网卡</a>
+										</li>
+										<li>
+											<a href="#" title="笔记本电源适配器">笔记本电源适配器</a>
+										</li>
+										<li>
+											<a href="#" title="内存">内存</a>
+										</li>
+										<li>
+											<a href="#" title="笔记本配件">笔记本配件</a>
+										</li>
+										<li>
+											<a href="#" title="智能手表">智能手表</a>
+										</li>
+										<li>
+											<a href="#" title="音箱">音箱</a>
+										</li>
+										<li>
+											<a href="#" title="手机保护套">手机保护套</a>
+										</li>
+										<li>
+											<a href="#" title="无线网卡">无线网卡</a>
+										</li>
+										<li>
+											<a href="#" title="智能手环">智能手环</a>
+										</li>
+										<li>
+											<a href="#" title="鼠标垫">鼠标垫</a>
+										</li>
+										<li>
+											<a href="#" title="液晶显示器">液晶显示器</a>
+										</li>
+										<li>
+											<a href="#" title="散热器">散热器</a>
+										</li>
+
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="content" class="w">
+			<div class="service">
+				<span class="logo">ZOL商城服务保障：</span>
+				<a href="http://go.zol.com/topic/5062097.html" target="_blank"><i class="iconfont"></i>行货保证</a>
+				<a href="http://go.zol.com/topic/5062097.html"><i class="iconfont"></i>发票保障</a>
+				<a href="http://go.zol.com/topic/5062097.html" target="_blank"><i class="iconfont"></i>顺丰包邮</a>
+				<a href="http://go.zol.com/topic/5062097.html" target="_blank"><i class="iconfont"></i>无忧退换</a>
+				<a href="http://go.zol.com/topic/5062097.html" target="_blank"><i class="iconfont"></i>先行赔付</a>
+			</div>
+			<div class="toolbar">
+				<ul class="sort">
+					<li class="current">
+						<a href="http://www.zol.com/index.php?c=List&amp;keyword=笔记本" class="default">默认</a>
+					</li>
+					<li class="">
+						<a href="http://www.zol.com/index.php?c=List&amp;str=o7&amp;keyword=笔记本" class="default">高人气</a>
+					</li>
+					<li class="">
+						<a href="http://www.zol.com/index.php?c=List&amp;str=o3&amp;keyword=笔记本" class="default">高销量</a>
+					</li>
+					<li class="">
+						<a href="http://www.zol.com/index.php?c=List&amp;str=o2&amp;keyword=笔记本" class="default">价格由低到高</a>
+					</li>
+					<li class="">
+						<a href="http://www.zol.com/index.php?c=List&amp;str=o1&amp;keyword=笔记本" class="default">价格由高到低</a>
+					</li>
+					<li class="comm-dress">
+						<span class="delivery-origin">
+                            发货地                            <i class="ico"></i>
+                        </span>
+						<div class="commdress-list" style="display: none;">
+							<dl>
+								<dt>华北</dt>
+								<dd>
+									<ul>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng1&amp;keyword=笔记本">北京</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng3&amp;keyword=笔记本">天津</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng8&amp;keyword=笔记本">河北</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng11&amp;keyword=笔记本">山西</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng9&amp;keyword=笔记本">内蒙</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng23&amp;keyword=笔记本">山东</a>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							<dl>
+								<dt>华东</dt>
+								<dd>
+									<ul>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng2&amp;keyword=笔记本">上海</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng25&amp;keyword=笔记本">江苏</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng26&amp;keyword=笔记本">浙江</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng24&amp;keyword=笔记本">安徽</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng32&amp;keyword=笔记本">江西</a>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							<dl>
+								<dt>华中</dt>
+								<dd>
+									<ul>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng22&amp;keyword=笔记本">河南</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng21&amp;keyword=笔记本">湖北</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng20&amp;keyword=笔记本">湖南</a>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							<dl>
+								<dt>华南</dt>
+								<dd>
+									<ul>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng33&amp;keyword=笔记本">福建</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng30&amp;keyword=笔记本">广东</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng31&amp;keyword=笔记本">广西</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng34&amp;keyword=笔记本">海南</a>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							<dl>
+								<dt>东北</dt>
+								<dd>
+									<ul>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng6&amp;keyword=笔记本">辽宁</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng7&amp;keyword=笔记本">吉林</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng5&amp;keyword=笔记本">黑龙江</a>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							<dl>
+								<dt>西北</dt>
+								<dd>
+									<ul>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng10&amp;keyword=笔记本">陕西</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng12&amp;keyword=笔记本">甘肃</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng16&amp;keyword=笔记本">青海</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng13&amp;keyword=笔记本">宁夏</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng14&amp;keyword=笔记本">新疆</a>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							<dl>
+								<dt>西南</dt>
+								<dd>
+									<ul>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng4&amp;keyword=笔记本">重庆</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng17&amp;keyword=笔记本">四川</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng19&amp;keyword=笔记本">贵州</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng18&amp;keyword=笔记本">云南</a>
+										</li>
+										<li>
+											<a href="http://www.zol.com/index.php?c=List&amp;str=sheng15&amp;keyword=笔记本">西藏</a>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+
+						</div>
+					</li>
+					<li class="price-range clearfix">
+						<div class="inner clearfix" id="priceInner">
+							<form name="Z_searchForm" id="Z_searchForm" method="get" action="">
+								<input name="price_start" type="text" class="text" value="￥" id="priceStart" maxlength="10"><i>-</i>
+								<input name="price_end" type="text" class="text" value="￥" id="priceEnd" maxlength="10">
+								<span class="operation" style="display: none;"> 
+                                    <a href="javascript:void(0);" class="confirm" id="priceConfirm">确定</a> 
+                                    <a href="javascript:void(0);" id="priceCancle">清除</a> 
+                                </span>
+							</form>
+						</div>
+					</li>
+					<li class="screening">
+						<span class="fold" style="display:none;">更多<i class="ico"></i></span>
+						<div class="list clearfix">
+							<label for="check_1">
+                                <input type="checkbox" name="is_promo" value="1" class="check" id="check_1">限时抢购</label>
+							<label for="check_11">
+                                <input type="checkbox" name="is_active" value="1" class="check" id="check_11">店铺活动</label>
+						</div>
+					</li>
+				</ul>
+				<div class="mini-page"><em>1/100</em><span class="no-prev">上一页</span>
+					<a href="#class="next">下一页<i></i></a>
+				</div>
+
+			</div>
+			<!--===============================good_list==========================================================================-->
+			<ul class="goods-list" id="splist">
+				<!--<li>
+					<a href="#" target="_blank" class="pic" dataid = "'+data[i].id+'">
+							<img src="../img/list/1.jpg" width="200">
+					</a>
+					<div class="title">
+						<a href="#" target="_blank">
+							联想 Ideapad 700-15ISK-IFI（4GB/1TB/2G独显） 全新六代处理器 时尚轻薄 高速性能 随时掌控天下动态！！！
+						</a>
+					</div>
+					
+					<div class="price-bar">
+						<span class="price">¥4490.00</span>
+					</div>
+					<div class="volume">
+						<span>销量数<em>&nbsp;41</em></span>
+						<span class="evaluation">评价数 <a href="#" target="_blank">3</a></span>
+					</div>
+					<div class="shop-infor">
+						<p class="shop-name">
+							<a href="#" target="_blank" title="新捷数码(正品特惠)">新捷数码(正品特惠)</a>
+						</p>
+						<p class="total_volume" >店铺总成交<em>836</em>笔</p>
+						<p class ="more"><a href="#"></a></p>
+					</div>
+				</li>-->
+			</ul>
+			
+			
+			<div class="page">
+				<span class="no-prev">上一页</span>
+				<span class="current">1</span>
+				<a href="#">2</a>
+				<a href="#">3</a>...<a href="#">100</a>
+				<a href="#" class="next">下一页</a>
+			</div>
+		</div>
+			<!--分页测试-->
+			<div class="holder"></div>
+			
+			
+		<div id="footer_ad">
+			<div class="hd">
+				<div class="title">
+					<span>正在进行中的活动</span>
+				</div>
+			</div>
+			<ul class="ads">
+				<li><a href="#"><img src="../img/foots_1.jpg"/></a></li>
+				<li><a href="#"><img src="../img/foots_2.jpg"/></a></li>
+				<li><a href="#"><img src="../img/foots_3.jpg"/></a></li>
+				<li><a href="#"><img src="../img/foots_4.jpg"/></a></li>
+			</ul>
+		
+			<div class="search_footer">
+                <div class="search_box">
+                    <div class="search-bottom">
+                        <input name="keyword" type="text" class="search_text" value="">
+                        <input type="submit" value="搜 索" class="search_btn" hidefocus="true">
+                    </div>
+                </div>
+	        </div>
+	    </div>
+		<div id="foots"></div>
+	</body>
+
+</html>
